@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hello Techies — Web
 
-## Getting Started
+Sitio de **Hello Techies** (Anita / Anabella Dichiara): inglés para el mundo IT.
 
-First, run the development server:
+- **Next.js** (App Router) + **Tailwind CSS**
+- **Framer Motion** para animaciones
+- **Lucide React** para íconos
+- Fuente: **Space Grotesk** (Google Fonts)
+
+## Cómo correr el proyecto
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrí [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Antes de publicar
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Imágenes**: Agregá en `/public`:
+   - `logo.png` — logo de Hello Techies (navbar y footer)
+   - `anita.jpg` — foto de Anita (hero y sección “Sobre Anita”)
 
-## Learn More
+2. **WhatsApp**: En `src/lib/constants.ts` reemplazá `WHATSAPP_NUMBER` por el número real (formato: código país + número sin espacios ni guiones, ej. `5493515551234`).
 
-To learn more about Next.js, take a look at the following resources:
+## Estructura
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/app` — rutas (home, cursos)
+- `src/components` — Navbar, Footer, secciones de la home
+- `src/lib` — constantes y utilidades (`cn`, `WHATSAPP_URL`)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Rutas
 
-## Deploy on Vercel
+- `/` — Home
+- `/cursos/from-scratch` — Curso From Scratch
+- `/cursos/speaking-hub` — Curso Speaking Hub
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Build
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm start
+```
