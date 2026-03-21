@@ -45,9 +45,14 @@ export function Hero() {
           </p>
           <h1
             id="hero-heading"
-            className="text-balance text-4xl font-semibold tracking-tight text-zinc-900 sm:text-5xl lg:text-6xl"
+            className="font-semibold leading-[2.5rem] tracking-tight text-zinc-900"
           >
-            Tu inglés no debería frenarte.
+            <span className="block whitespace-nowrap text-[2.77rem]">
+              Tu carrera en IT es global.
+            </span>
+            <span className="mt-1 block text-balance text-4xl sm:text-5xl lg:text-6xl">
+              Tu inglés, también.
+            </span>
           </h1>
           <p className="max-w-xl text-balance text-base text-zinc-600 sm:text-lg">
             Aprendé inglés pensado para IT: meetings, entrevistas y equipos
@@ -59,7 +64,7 @@ export function Hero() {
               href="/#cursos"
               className={cn(
                 "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold shadow-sm",
-                "bg-[#ffd900] text-zinc-950 transition hover:-translate-y-0.5 hover:shadow-md"
+                "bg-[#ffed00] text-zinc-950 transition hover:-translate-y-0.5 hover:shadow-md"
               )}
             >
               Ver cursos
@@ -70,7 +75,7 @@ export function Hero() {
               rel="noreferrer"
               className={cn(
                 "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold",
-                "border border-zinc-900 text-zinc-900 transition hover:bg-zinc-900 hover:text-white"
+                "border border-zinc-900 text-zinc-900 transition hover:-translate-y-0.5 hover:bg-zinc-900 hover:text-white hover:shadow-md"
               )}
             >
               Hablar con Anita
@@ -91,8 +96,8 @@ export function Hero() {
           transition={{ duration: 0.7, ease: "easeOut" as const, delay: 0.1 }}
         >
           <div className="relative mx-auto aspect-[4/5] max-w-xs overflow-hidden rounded-[2.5rem] bg-[#fff9c2] sm:max-w-sm">
-            <div className="pointer-events-none absolute -left-10 -top-10 h-40 w-40 rounded-full bg-[#ffd900]/40 blur-3xl" />
-            <div className="pointer-events-none absolute -right-10 bottom-0 h-40 w-40 rounded-full bg-[#ffd900]/30 blur-3xl" />
+            <div className="pointer-events-none absolute -left-10 -top-10 h-40 w-40 rounded-full bg-[#ffed00]/40 blur-3xl" />
+            <div className="pointer-events-none absolute -right-10 bottom-0 h-40 w-40 rounded-full bg-[#ffed00]/30 blur-3xl" />
 
             <Image
               src="/anita.jpg"
@@ -107,7 +112,7 @@ export function Hero() {
           </div>
 
           <motion.div
-            className="pointer-events-none absolute -left-6 top-6 hidden rounded-2xl bg-white px-3 py-2 text-xs font-medium shadow-lg sm:flex"
+            className="pointer-events-none absolute -left-6 top-6 hidden rounded-2xl bg-white px-4 py-2.5 text-xs font-medium shadow-lg sm:flex"
             variants={floating}
             animate="animate"
           >
@@ -115,19 +120,17 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            className="pointer-events-none absolute -right-2 top-24 hidden rounded-2xl bg-white px-3 py-2 text-xs font-medium shadow-lg sm:flex"
+            className="pointer-events-none absolute -right-2 top-24 hidden rounded-2xl bg-white px-4 py-2.5 text-xs font-medium shadow-lg sm:flex"
             variants={floating}
             animate="animate"
-            transition={{ duration: 4.4, repeat: Infinity, ease: "easeInOut" as const }}
           >
             🌍 Remote team
           </motion.div>
 
           <motion.div
-            className="pointer-events-none absolute -bottom-3 left-10 hidden rounded-2xl bg-white px-3 py-2 text-xs font-medium shadow-lg sm:flex"
+            className="pointer-events-none absolute -bottom-3 left-10 hidden rounded-2xl bg-white px-4 py-2.5 text-xs font-medium shadow-lg sm:flex"
             variants={floating}
             animate="animate"
-            transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut" as const }}
           >
             ✅ Job interview
           </motion.div>

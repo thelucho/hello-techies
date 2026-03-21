@@ -55,7 +55,7 @@ export function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className="transition-colors hover:text-zinc-950"
+              className="navbar-marker-link"
             >
               {item.label}
             </Link>
@@ -69,7 +69,7 @@ export function Navbar() {
             rel="noreferrer"
             className={cn(
               "hidden rounded-full px-4 py-2 text-sm font-semibold shadow-sm md:inline-flex",
-              "bg-[#ffd900] text-zinc-950 transition hover:-translate-y-0.5 hover:shadow-md"
+              "bg-[#ffed00] text-zinc-950 transition hover:-translate-y-0.5 hover:shadow-md"
             )}
           >
             Quiero arrancar 🚀
@@ -102,7 +102,7 @@ export function Navbar() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="mt-2 inline-flex items-center justify-center rounded-full bg-[#ffd900] px-4 py-2 text-sm font-semibold text-zinc-950 shadow-sm"
+              className="mt-2 inline-flex items-center justify-center rounded-full bg-[#ffed00] px-4 py-2 text-sm font-semibold text-zinc-950 shadow-sm"
             >
               Quiero arrancar 🚀
             </a>

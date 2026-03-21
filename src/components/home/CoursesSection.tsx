@@ -65,13 +65,13 @@ export function CoursesSection() {
                 From Scratch 🧩
               </h3>
               <div className="shrink-0 inline-flex items-center gap-2 rounded-full bg-zinc-900 px-3 py-1 text-xs font-medium text-white">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#ffd900]" />
+                <span className="h-1.5 w-1.5 rounded-full bg-[#ffed00]" />
                 Para principiantes
               </div>
             </div>
 
             <p className="text-xs font-medium uppercase tracking-tight text-zinc-500">
-              Duración: 4 meses · 1h30 semanal
+              Duración: 4 meses · 1h 30min semanal
             </p>
 
             <p className="mt-3 text-sm text-zinc-700">
@@ -82,19 +82,19 @@ export function CoursesSection() {
 
             <ul className="mt-5 space-y-3 text-sm text-zinc-800">
               <li className="flex items-center gap-3">
-                <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffd900]/40 text-zinc-900">
+                <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffed00]/40 text-zinc-900">
                   <Sparkles size={18} />
                 </span>
                 <span>Base clara de gramática aplicada a contextos reales.</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffd900]/40 text-zinc-900">
+                <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffed00]/40 text-zinc-900">
                   <Users size={18} />
                 </span>
                 <span>Prácticas de presentación personal y de tu rol en IT.</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffd900]/40 text-zinc-900">
+                <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffed00]/40 text-zinc-900">
                   <MessageCircle size={18} />
                 </span>
                 <span>Comprensión de diálogos simples en entorno de trabajo.</span>
@@ -124,13 +124,13 @@ export function CoursesSection() {
                 Speaking Hub 💬
               </h3>
               <div className="shrink-0 inline-flex items-center gap-2 rounded-full bg-zinc-900 px-3 py-1 text-xs font-medium text-white">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#ffd900]" />
+                <span className="h-1.5 w-1.5 rounded-full bg-[#ffed00]" />
                 Para quienes ya tienen base
               </div>
             </div>
 
             <p className="text-xs font-medium uppercase tracking-tight text-zinc-500">
-              Duración: 4 meses · 1h semanal
+              Duración: 4 meses · 1h 30min semanal
             </p>
 
             <p className="mt-3 text-sm text-zinc-700">
@@ -140,19 +140,19 @@ export function CoursesSection() {
 
             <ul className="mt-5 space-y-3 text-sm text-zinc-800">
               <li className="flex items-center gap-3">
-                <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffd900]/40 text-zinc-900">
+                <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffed00]/40 text-zinc-900">
                   <MessageCircle size={18} />
                 </span>
                 <span>Conversaciones guiadas sobre situaciones reales de trabajo.</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffd900]/40 text-zinc-900">
+                <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffed00]/40 text-zinc-900">
                   <Users size={18} />
                 </span>
                 <span>Grupos reducidos para que realmente puedas hablar.</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffd900]/40 text-zinc-900">
+                <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffed00]/40 text-zinc-900">
                   <Sparkles size={18} />
                 </span>
                 <span>Vocabulario y expresiones propias del mundo IT.</span>

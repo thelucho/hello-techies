@@ -96,9 +96,9 @@ export function Testimonials() {
               className="flex h-full flex-col rounded-3xl border border-zinc-100 bg-zinc-50 p-5 text-sm shadow-sm transition hover:-translate-y-1 hover:shadow-md"
               variants={cardVariants}
             >
-              <div className="mb-3 flex gap-1 text-[#ffd900]">
+              <div className="mb-3 flex gap-1 text-[#ffed00]">
                 {Array.from({ length: 5 }).map((_, index) => (
-                  <Star key={index} size={16} fill="#ffd900" stroke="none" />
+                  <Star key={index} size={16} fill="#ffed00" stroke="none" />
                 ))}
               </div>
               <p className="flex-1 text-zinc-800">&ldquo;{testimonio.text}&rdquo;</p>

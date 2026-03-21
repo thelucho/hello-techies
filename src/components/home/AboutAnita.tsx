@@ -31,8 +31,8 @@ export function AboutAnita() {
     >
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-4 sm:px-6 lg:flex-row lg:px-8">
         <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md">
-          <div className="pointer-events-none absolute -left-10 -top-10 h-40 w-40 rounded-full bg-[#ffd900]/30 blur-3xl" />
-          <div className="pointer-events-none absolute -right-6 bottom-0 h-32 w-32 rounded-full bg-[#ffd900]/25 blur-3xl" />
+          <div className="pointer-events-none absolute -left-10 -top-10 h-40 w-40 rounded-full bg-[#ffed00]/30 blur-3xl" />
+          <div className="pointer-events-none absolute -right-6 bottom-0 h-32 w-32 rounded-full bg-[#ffed00]/25 blur-3xl" />
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2.25rem] bg-white shadow-sm">
             <Image
               src="/anita2.jpg"

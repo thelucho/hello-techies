@@ -31,7 +31,7 @@ export function FinalCta() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center justify-center rounded-full bg-[#ffd900] px-7 py-3 text-sm font-semibold text-zinc-950 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg"
+            className="inline-flex items-center justify-center rounded-full bg-[#ffed00] px-7 py-3 text-sm font-semibold text-zinc-950 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg"
           >
             Quiero arrancar 🚀
           </a>

@@ -102,7 +102,7 @@ export default function SpeakingHubPage() {
               "Buscás un espacio seguro para equivocarte y mejorar sin presión.",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3 text-sm text-zinc-700">
-                <span className="mt-0.5 shrink-0 text-[#ffd900]">
+                <span className="mt-0.5 shrink-0 text-[#ffed00]">
                   <Check size={18} strokeWidth={2.5} />
                 </span>
                 {item}
@@ -129,10 +129,10 @@ export default function SpeakingHubPage() {
                 key={paso.step}
                 className={cn(
                   "flex gap-4 rounded-2xl border border-zinc-100 bg-zinc-50/50 p-5",
-                  "transition hover:border-[#ffd900]/40 hover:shadow-sm"
+                  "transition hover:border-[#ffed00]/40 hover:shadow-sm"
                 )}
               >
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#ffd900] text-lg font-semibold text-zinc-900">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#ffed00] text-lg font-semibold text-zinc-900">
                   {paso.step}
                 </span>
                 <div>
@@ -191,7 +191,7 @@ export default function SpeakingHubPage() {
                 key={item}
                 className="flex items-center gap-3 rounded-xl border border-zinc-100 bg-white px-4 py-3 text-sm text-zinc-800"
               >
-                <Check size={18} className="shrink-0 text-[#ffd900]" />
+                <Check size={18} className="shrink-0 text-[#ffed00]" />
                 {item}
               </li>
             ))}
@@ -234,7 +234,7 @@ export default function SpeakingHubPage() {
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          <div className="rounded-2xl bg-[#ffd900]/20 p-6 text-center">
+          <div className="rounded-2xl bg-[#ffed00]/20 p-6 text-center">
             <p className="text-[18px] font-medium text-zinc-800">
               ¿No sabés si este es tu nivel? Agendá una entrevista diagnóstica
               sin costo y te orientamos.
@@ -244,7 +244,7 @@ export default function SpeakingHubPage() {
               target="_blank"
               rel="noreferrer"
               className={cn(
-                "mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-[#ffd900] px-6 py-3 text-sm font-semibold text-zinc-950 shadow-sm",
+                "mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-[#ffed00] px-6 py-3 text-sm font-semibold text-zinc-950 shadow-sm",
                 "transition hover:-translate-y-0.5 hover:shadow-md"
               )}
             >
