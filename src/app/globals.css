@@ -21,8 +21,17 @@ body {
     "SF Pro Text", "Segoe UI", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   min-height: 100vh;
+}
+
+section[id],
+div[id] {
+  scroll-margin-top: 5.5rem;
 }
 
 .navbar-marker-link {

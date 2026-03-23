@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = "5490000000000"; // Reemplazá por tu número real
+export const WHATSAPP_NUMBER = "5493584202540"; // Reemplazá por tu número real
 
 const WHATSAPP_BASE_URL = "https://wa.me";
 

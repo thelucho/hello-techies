@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 24 },
@@ -66,11 +68,21 @@ export function AboutAnita() {
             {BADGES.map((badge) => (
               <span
                 key={badge}
-                className="rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-medium text-zinc-800"
+                className="rounded-md bg-zinc-200/70 px-2.5 py-1 text-[11px] font-medium tracking-wide text-zinc-700"
               >
                 {badge}
               </span>
             ))}
+          </div>
+
+          <div className="pt-2">
+            <Link
+              href="/sobre-mi"
+              className="inline-flex items-center gap-2 rounded-full bg-[#ffed00] px-5 py-2.5 text-sm font-semibold text-zinc-950 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+            >
+              Más sobre mí
+              <ArrowRight size={16} />
+            </Link>
           </div>
         </div>
       </div>

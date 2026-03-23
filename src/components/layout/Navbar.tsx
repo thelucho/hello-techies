@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type MouseEvent } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { WHATSAPP_URL } from "@/lib/constants";
 import { cn } from "@/lib/utils";
@@ -19,6 +20,37 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const { scrollY } = useScroll();
+  const pathname = usePathname();
+
+  const handleSectionScroll = (
+    event: MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    const hashIndex = href.indexOf("#");
+    if (hashIndex === -1 || pathname !== "/") {
+      return;
+    }
+
+    event.preventDefault();
+    const sectionId = href.slice(hashIndex + 1);
+    const target = document.getElementById(sectionId);
+    if (!target) {
+      return;
+    }
+
+    const header = document.querySelector("header");
+    const headerHeight = header instanceof HTMLElement ? header.offsetHeight : 0;
+    const topGap = 12;
+    const targetTop =
+      target.getBoundingClientRect().top + window.scrollY - headerHeight - topGap;
+
+    window.scrollTo({
+      top: Math.max(0, targetTop),
+      behavior: "smooth",
+    });
+    window.history.pushState(null, "", `/#${sectionId}`);
+    setIsOpen(false);
+  };
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setIsScrolled(latest > 10);
@@ -55,6 +87,7 @@ export function Navbar() {
             <Link
               key={item.href}
               href={item.href}
+              onClick={(event) => handleSectionScroll(event, item.href)}
               className="navbar-marker-link"
             >
               {item.label}
@@ -92,7 +125,7 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                onClick={() => setIsOpen(false)}
+                onClick={(event) => handleSectionScroll(event, item.href)}
                 className="rounded-full px-3 py-2 text-sm font-medium text-zinc-800 hover:bg-zinc-100"
               >
                 {item.label}
