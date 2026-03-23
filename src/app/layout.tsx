@@ -13,6 +13,13 @@ export const metadata: Metadata = {
   title: "Hello Techies | Inglés para el mundo IT",
   description:
     "Clases de inglés online orientadas al mundo IT con Anita Dichiara.",
+  openGraph: {
+    images: ["/open-graph.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/open-graph.png"],
+  },
   icons: {
     icon: "/logo.png",
     apple: "/logo.png",
