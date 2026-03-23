@@ -29,39 +29,39 @@ const cardVariants = {
 const TESTIMONIALS = [
   {
     name: "Mari L.",
-    text: "The classes are entertaining and I enjoy them a lot.",
+    text: "I always say that you are an excellent teacher. The classes are entertaining and I enjoy them a lot.",
   },
   {
     name: "Mati",
-    text: "Tus clases son geniales, divertidas y didácticas.",
+    text: "Tus clases son geniales, divertidas y didácticas. Me sirven mucho 🤗",
+  },
+  {
+    name: "Fede L.",
+    text: "Me parece un curso excelente, dictado con mucha didáctica y con temas apropiados para el nivel.",
+  },
+  {
+    name: "Carla B.",
+    text: "Realmente me sirvieron mucho las dinámicas de práctica de speaking durante las clases y las correcciones de pronunciación. Recalco el trabajo de planificación de las clases, siendo un desafío la modalidad virtual.",
   },
   {
     name: "Andrea C.",
-    text: "La profe Anabella es una genia guiando y haciendo amena la clase.",
+    text: "No les cambiaría nada, la profe Anabella es una genia guiando y haciendo amena la clase.",
   },
   {
-    name: "Carla P.",
-    text: "Las clases super claras y llevaderas.",
-  },
-  {
-    name: "Anónimo",
+    name: "Lara C.",
     text: "Anita es muy detallada y clara en cada explicación. Se asegura que los conceptos queden claros y entendidos por todos.",
   },
   {
-    name: "Santi G.",
-    text: "Me ayudó a animarme a participar más en reuniones con el equipo global.",
+    name: "Tayson",
+    text: "Hi everyone! Soy Tay, actualmente viviendo en Nueva Zelanda. Estudié con Ani los últimos 6 meses antes de mi llegada aquí, y básicamente todo lo que aprendí con ella es literalmente lo que estoy utilizando como herramienta. Sus clases son súper dinámicas e interesantes!! Súper recomendable Anita!! No pierdan su oportunidad!! 🙌🏽",
   },
   {
-    name: "Lucía R.",
-    text: "Siento que por fin el inglés que estudio se conecta con mi trabajo en IT.",
+    name: "Jonathan G.",
+    text: "Tuve una muy buena experiencia durante las clases. Desde el principio me sentí cómodo, lo cual fue clave porque hacía tiempo que no tomaba clases de inglés y volver me generaba muchas dudas. Las clases eran dinámicas y llevaderas, combinando práctica oral con gramática y situaciones cotidianas, lo que ayudaba a aprender de forma más natural. También destaco el ambiente relajado, que hacía que uno se anime a participar sin miedo a equivocarse. Gracias a las clases, logré mejorar mi confianza al hablar y entender inglés en el día a día, y siento que avancé de manera constante. Sin dudas recomendaría las clases a cualquier persona que quiera aprender o mejorar su inglés en un entorno cómodo y bien guiado.",
   },
   {
-    name: "Pablo M.",
-    text: "Las clases son dinámicas y el material está muy bien pensado para el día a día en IT.",
-  },
-  {
-    name: "Valentina F.",
-    text: "Anita tiene una forma de explicar que hace que todo cierre. Recomiendo 100%.",
+    name: "Luciano D.",
+    text: "Anita es una profesora increíble. Me sentí muy cómodo en las clases y aprendí mucho. Las clases fueron muy dinámicas y me ayudaron a mejorar mi nivel de inglés. Recomiendo 100%.",
   },
 ];
 

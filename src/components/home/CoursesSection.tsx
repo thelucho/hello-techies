@@ -172,8 +172,8 @@ export function CoursesSection() {
         </motion.div>
 
         <div className="mt-8 space-y-3 text-center">
-          <p className="text-xs text-zinc-600 sm:text-sm">
-            ¿No sabés cuál elegir? Agendá una entrevista diagnóstica sin costo.
+          <p className="text-base text-zinc-600 sm:text-base">
+            ¿No sabés cuál elegir? Agendá una entrevista diagnóstica <span className="font-bold">¡Gratis!</span> (15 min.)
           </p>
           <a
             href={WHATSAPP_URL}
