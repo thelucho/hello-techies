@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import {
   Check,
@@ -33,11 +34,6 @@ const MODULOS = [
     description:
       "Explicás incidentes, bugs y soluciones de forma clara para equipos internacionales.",
   },
-  {
-    title: "Comprensión auditiva y lectora en contexto IT",
-    description:
-      "Mejorás la escucha y lectura de materiales reales: meetings, docs, tickets.",
-  },
 ];
 
 const INCLUYE = [
@@ -46,10 +42,14 @@ const INCLUYE = [
   "Material adaptado a IT",
   "Práctica oral en cada clase",
   "Feedback personalizado",
-  "PDF de regalo con frases y vocabulario clave",
+  "Práctica extra",
 ];
 
 export default function FromScratchPage() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero interno */}
@@ -164,6 +164,15 @@ export default function FromScratchPage() {
               </li>
             ))}
           </ul>
+          <div className="mt-4 rounded-xl border border-[#ffed00]/40 bg-[#ffed00]/10 px-4 py-3">
+            <p className="text-sm font-semibold text-zinc-900">
+              🎁 Incluye un PDF de regalo
+            </p>
+            <p className="mt-1 text-sm text-zinc-700">
+              Antes de comenzar, podés descargar una clase de muestra en PDF
+              para ver cómo trabajamos por dentro.
+            </p>
+          </div>
         </motion.section>
 
         {/* Detalles del curso */}
@@ -195,6 +204,27 @@ export default function FromScratchPage() {
               <FileText size={18} />
               <span>PDF de regalo incluido</span>
             </div>
+          </div>
+        </motion.section>
+
+        <motion.section
+          className="pb-12 text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="relative w-full overflow-hidden rounded-xl border border-zinc-200 bg-zinc-50 px-5 py-4 text-center">
+            <Clock
+              aria-hidden="true"
+              className="pointer-events-none absolute -bottom-5 right-2 h-16 w-16 text-zinc-300/80"
+              strokeWidth={1.5}
+            />
+            <p className="relative text-base font-semibold text-zinc-800">
+              Apertura de cupos <span className="text-zinc-400">→</span>{" "}
+              <span className="text-zinc-900">soon!</span>
+            </p>
           </div>
         </motion.section>
 
