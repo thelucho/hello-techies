@@ -116,7 +116,7 @@ export function Hero() {
             variants={floating}
             animate="animate"
           >
-            💬 Daily stand-up
+            🌍 Equipos internacionales
           </motion.div>
 
           <motion.div
@@ -124,7 +124,7 @@ export function Hero() {
             variants={floating}
             animate="animate"
           >
-            🌍 Remote team
+            💬 Hablá sin miedo
           </motion.div>
 
           <motion.div
@@ -132,7 +132,7 @@ export function Hero() {
             variants={floating}
             animate="animate"
           >
-            ✅ Job interview
+            🔥 Inglés real
           </motion.div>
         </motion.div>
       </div>
