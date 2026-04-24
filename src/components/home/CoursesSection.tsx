@@ -60,11 +60,11 @@ export function CoursesSection() {
             )}
             variants={cardVariants}
           >
-            <div className="mb-4 flex items-center justify-between gap-3">
-              <h3 className="text-xl font-bold tracking-tight text-zinc-900 sm:text-2xl">
-                From Scratch 🧩
+            <div className="mb-4">
+              <h3 className="whitespace-nowrap text-lg font-bold tracking-tight text-zinc-900 sm:text-xl">
+                From Scratch: desde cero 🧩
               </h3>
-              <div className="shrink-0 inline-flex items-center gap-2 rounded-full bg-zinc-900 px-3 py-1 text-xs font-medium text-white">
+              <div className="mt-2 inline-flex items-center gap-2 rounded-full bg-zinc-900 px-3 py-1 text-xs font-medium text-white">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#ffed00]" />
                 Para principiantes
               </div>
@@ -85,19 +85,19 @@ export function CoursesSection() {
                 <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffed00]/40 text-zinc-900">
                   <Sparkles size={18} />
                 </span>
-                <span>Base clara de gramática aplicada a contextos reales.</span>
+                <span>Aprendé las bases del inglés aplicadas a contextos reales.</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffed00]/40 text-zinc-900">
                   <Users size={18} />
                 </span>
-                <span>Prácticas de presentación personal y de tu rol en IT.</span>
+                <span>Practicá como presentarte y hablar de tu rol en IT.</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffed00]/40 text-zinc-900">
                   <MessageCircle size={18} />
                 </span>
-                <span>Comprensión de diálogos simples en entorno de trabajo.</span>
+                <span>Hablá en inglés desde la primera clase.</span>
               </li>
             </ul>
 
@@ -119,18 +119,18 @@ export function CoursesSection() {
             )}
             variants={cardVariants}
           >
-            <div className="mb-4 flex items-center justify-between gap-3">
-              <h3 className="text-xl font-bold tracking-tight text-zinc-900 sm:text-2xl">
-                Speaking Hub 💬
+            <div className="mb-4">
+              <h3 className="whitespace-nowrap text-lg font-bold tracking-tight text-zinc-900 sm:text-xl">
+                Speaking Hub: hablá con confianza 💬
               </h3>
-              <div className="shrink-0 inline-flex items-center gap-2 rounded-full bg-zinc-900 px-3 py-1 text-xs font-medium text-white">
+              <div className="mt-2 inline-flex items-center gap-2 rounded-full bg-zinc-900 px-3 py-1 text-xs font-medium text-white">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#ffed00]" />
                 Para quienes ya tienen base
               </div>
             </div>
 
             <p className="text-xs font-medium uppercase tracking-tight text-zinc-500">
-              Duración: 4 meses · 1h 30min semanal
+              Duración: 4 meses · 1h semanal
             </p>
 
             <p className="mt-3 text-sm text-zinc-700">
@@ -143,19 +143,19 @@ export function CoursesSection() {
                 <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffed00]/40 text-zinc-900">
                   <MessageCircle size={18} />
                 </span>
-                <span>Conversaciones guiadas sobre situaciones reales de trabajo.</span>
+                <span>Perdé el miedo a hablar con práctica constante.</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffed00]/40 text-zinc-900">
                   <Users size={18} />
                 </span>
-                <span>Grupos reducidos para que realmente puedas hablar.</span>
+                <span>Expresá tus ideas con claridad en inglés.</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#ffed00]/40 text-zinc-900">
                   <Sparkles size={18} />
                 </span>
-                <span>Vocabulario y expresiones propias del mundo IT.</span>
+                <span>Recibí feedback personalizado para mejorar rápido.</span>
               </li>
             </ul>
 

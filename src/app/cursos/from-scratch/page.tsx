@@ -65,7 +65,7 @@ export default function FromScratchPage() {
             Para principiantes
           </span>
           <h1 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
-            From Scratch 🧩
+            From Scratch: desde cero 🧩
           </h1>
           <p className="mt-3 text-base text-zinc-600 sm:text-lg">
             Construí tu base en inglés desde cero, con foco en el mundo IT.

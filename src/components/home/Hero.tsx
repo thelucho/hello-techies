@@ -83,7 +83,7 @@ export function Hero() {
           </div>
 
           <p className="text-xs text-zinc-500">
-            Clases 100% online, grupos reducidos y foco en lo que realmente
+            Clases 100% online, en grupos reducidos y con foco en lo que realmente
             hacés en el día a día.
           </p>
         </motion.div>

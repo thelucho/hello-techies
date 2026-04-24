@@ -33,8 +33,8 @@ Abrí [http://localhost:3000](http://localhost:3000).
 ## Rutas
 
 - `/` — Home
-- `/cursos/from-scratch` — Curso From Scratch
-- `/cursos/speaking-hub` — Curso Speaking Hub
+- `/cursos/from-scratch` — Curso From Scratch: desde cero 🧩
+- `/cursos/speaking-hub` — Curso Speaking Hub: hablá con confianza 💬
 
 ## Build
 

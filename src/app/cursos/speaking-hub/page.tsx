@@ -78,7 +78,7 @@ export default function SpeakingHubPage() {
             Para quienes ya tienen base
           </span>
           <h1 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
-            Speaking Hub 💬
+            Speaking Hub: hablá con confianza 💬
           </h1>
           <p className="mt-3 text-base text-zinc-600 sm:text-lg">
             Destrabá el habla. Hablá de IT en inglés con fluidez y confianza.
