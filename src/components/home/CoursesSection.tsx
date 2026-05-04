@@ -101,13 +101,19 @@ export function CoursesSection() {
               </li>
             </ul>
 
-            <div className="mt-6 flex items-center justify-between gap-3">
+            <div className="mt-auto w-full pt-6">
               <Link
                 href="/cursos/from-scratch"
-                className="inline-flex items-center gap-1 text-sm font-semibold text-zinc-900"
+                className={cn(
+                  "flex w-full items-center justify-center gap-2 rounded-2xl border border-zinc-400 px-4 py-3.5",
+                  "bg-gradient-to-br from-white via-zinc-100 to-zinc-200",
+                  "text-sm font-semibold text-zinc-900 transition",
+                  "hover:border-zinc-500 hover:from-zinc-100 hover:via-zinc-200 hover:to-zinc-300",
+                  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
+                )}
               >
-                Ver detalles
-                <ArrowRight size={16} />
+                Ver detalles de curso
+                <ArrowRight size={18} className="shrink-0" aria-hidden />
               </Link>
             </div>
           </motion.article>
@@ -159,27 +165,37 @@ export function CoursesSection() {
               </li>
             </ul>
 
-            <div className="mt-6 flex items-center justify-between gap-3">
+            <div className="mt-auto w-full pt-6">
               <Link
                 href="/cursos/speaking-hub"
-                className="inline-flex items-center gap-1 text-sm font-semibold text-zinc-900"
+                className={cn(
+                  "flex w-full items-center justify-center gap-2 rounded-2xl border border-zinc-400 px-4 py-3.5",
+                  "bg-gradient-to-br from-white via-zinc-100 to-zinc-200",
+                  "text-sm font-semibold text-zinc-900 transition",
+                  "hover:border-zinc-500 hover:from-zinc-100 hover:via-zinc-200 hover:to-zinc-300",
+                  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
+                )}
               >
-                Ver detalles
-                <ArrowRight size={16} />
+                Ver detalles del curso
+                <ArrowRight size={18} className="shrink-0" aria-hidden />
               </Link>
             </div>
           </motion.article>
         </motion.div>
 
         <div className="mt-8 space-y-3 text-center">
-          <p className="text-base text-zinc-600 sm:text-base">
-            ¿No sabés cuál elegir? Agendá una entrevista diagnóstica <span className="font-bold">¡Gratis!</span> (15 min.)
+          <p className="text-base text-zinc-700 sm:text-[1.0625rem] mb-6">
+            <strong>¿No sabés cuál elegir?</strong> <br />Agendá una entrevista diagnóstica{" "}
+            <span className="rounded-md bg-[#ffed00]/45 px-1.5 py-0.5 font-bold text-zinc-900">
+              ¡Gratis!
+            </span>{" "}
+            (15 min.)
           </p>
           <a
             href={WHATSAPP_URL}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center justify-center rounded-full border border-zinc-900 px-5 py-2.5 text-sm font-semibold text-zinc-900 transition hover:bg-zinc-900 hover:text-white"
+            className="inline-flex items-center justify-center rounded-full border border-zinc-900 bg-zinc-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-zinc-800"
           >
             Quiero que me orienten
           </a>

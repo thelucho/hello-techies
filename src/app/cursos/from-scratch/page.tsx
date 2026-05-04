@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import {
   Check,
   Clock,
-  FileText,
+  Download,
+  Gift,
   Globe,
   MessageCircle,
   Users,
@@ -17,6 +18,9 @@ const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
 };
+
+const MINI_LESSON_GIFT_URL =
+  "https://drive.google.com/file/d/1WI036yqfnuQTlo6yekvycTLUepmDrQy8/view";
 
 const MODULOS = [
   {
@@ -68,7 +72,7 @@ export default function FromScratchPage() {
             From Scratch: desde cero 🧩
           </h1>
           <p className="mt-3 text-base text-zinc-600 sm:text-lg">
-            Construí tu base en inglés desde cero, con foco en el mundo IT.
+            Construí tu inglés desde las bases con foco en el mundo IT.
           </p>
         </div>
       </motion.section>
@@ -116,7 +120,7 @@ export default function FromScratchPage() {
             ¿Qué vas a aprender?
           </h2>
           <p className="mt-2 text-sm text-zinc-600">
-            Cuatro módulos progresivos para que tengas una base sólida y aplicable.
+            Tres módulos progresivos para que tengas una base sólida y aplicable.
           </p>
           <div className="mt-6 space-y-4">
             {MODULOS.map((mod, i) => (
@@ -164,15 +168,42 @@ export default function FromScratchPage() {
               </li>
             ))}
           </ul>
-          <div className="mt-4 rounded-xl border border-[#ffed00]/40 bg-[#ffed00]/10 px-4 py-3">
-            <p className="text-sm font-semibold text-zinc-900">
-              🎁 Incluye un PDF de regalo
-            </p>
-            <p className="mt-1 text-sm text-zinc-700">
-              Antes de comenzar, podés descargar una clase de muestra en PDF
-              para ver cómo trabajamos por dentro.
-            </p>
-          </div>
+          <a
+            href={MINI_LESSON_GIFT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              "group mt-5 block overflow-hidden rounded-2xl border-2 border-[#ffed00]",
+              "bg-gradient-to-br from-[#ffed00]/35 via-[#fffef5] to-[#ffed00]/20",
+              "shadow-[0_10px_40px_-12px_rgba(234,179,8,0.55)]",
+              "transition duration-200 hover:-translate-y-0.5 hover:border-[#e6cf00]",
+              "hover:shadow-[0_16px_48px_-12px_rgba(234,179,8,0.65)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900"
+            )}
+          >
+            <div className="relative px-5 py-5 sm:flex sm:items-center sm:justify-between sm:gap-6">
+              <div className="flex-1">
+                <p className="inline-flex items-center gap-2 rounded-full bg-zinc-900/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-[#ffed00]">
+                  Regalo exclusivo
+                </p>
+                <p className="mt-3 text-lg font-bold tracking-tight text-zinc-900 sm:text-xl">
+                  🎁 Mini-lesson #1 gratis
+                </p>
+                <p className="mt-2 max-w-xl text-sm leading-relaxed text-zinc-700">
+                  Llevate una mini-lesson real para ver ejercicios, vocabulario IT y el ritmo de las
+                  clases antes de anotarte. Abrila en Drive y descargala cuando quieras.
+                </p>
+              </div>
+              <span
+                className={cn(
+                  "mt-4 inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-zinc-900 px-5 py-3 text-sm font-semibold text-[#ffed00]",
+                  "transition group-hover:bg-zinc-800 sm:mt-0"
+                )}
+              >
+                <Download size={18} aria-hidden />
+                Descargar Ahora
+              </span>
+            </div>
+          </a>
         </motion.section>
 
         {/* Detalles del curso */}
@@ -201,8 +232,8 @@ export default function FromScratchPage() {
               <span>Modalidad online</span>
             </div>
             <div className="flex items-center gap-2 rounded-full bg-zinc-100 px-4 py-2 text-sm text-zinc-800">
-              <FileText size={18} />
-              <span>PDF de regalo incluido</span>
+              <Gift size={18} />
+              <span>Mini-lesson de regalo</span>
             </div>
           </div>
         </motion.section>
@@ -215,15 +246,24 @@ export default function FromScratchPage() {
           variants={fadeInUp}
           transition={{ duration: 0.5 }}
         >
-          <div className="relative w-full overflow-hidden rounded-xl border border-zinc-200 bg-zinc-50 px-5 py-4 text-center">
+          <div
+            className={cn(
+              "relative w-full overflow-hidden rounded-xl border-2 px-5 py-4 text-center",
+              "border-indigo-400/55 bg-gradient-to-r from-indigo-50 via-violet-50/90 to-indigo-50",
+              "shadow-[0_10px_32px_-14px_rgba(99,102,241,0.35)]"
+            )}
+          >
             <Clock
               aria-hidden="true"
-              className="pointer-events-none absolute -bottom-5 right-2 h-16 w-16 text-zinc-300/80"
+              className="pointer-events-none absolute -bottom-5 right-2 h-16 w-16 text-indigo-300/65"
               strokeWidth={1.5}
             />
             <p className="relative text-base font-semibold text-zinc-800">
-              Apertura de cupos <span className="text-zinc-400">→</span>{" "}
-              <span className="text-zinc-900">soon!</span>
+              Apertura de cupos{" "}
+              <span className="text-indigo-400/90">→</span>{" "}
+              <span className="rounded-full border border-indigo-400/70 bg-indigo-100 px-2.5 py-0.5 font-bold text-indigo-950">
+                soon!
+              </span>
             </p>
           </div>
         </motion.section>
